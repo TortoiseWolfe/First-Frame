@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#334155" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#d946ef"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#bg-gradient)"/>
+  <rect width="1400" height="800" fill="url(#dot-grid)"/>
+
+  <!-- Accent Line -->
+  <rect x="0" y="0" width="1400" height="3" fill="url(#hero-gradient)"/>
+
+  <!-- Title -->
+  <text x="700" y="36" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">
+    FirstFrame — Hero / Landing
+  </text>
+
+  <!-- ==================== DESKTOP (Left) ==================== -->
+  <g id="desktop-view">
+    <!-- Desktop Frame -->
+    <rect x="40" y="60" width="900" height="680" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+
+    <!-- Film Strip Icon -->
+    <g transform="translate(490, 140)">
+      <!-- Film frame outer -->
+      <rect x="-70" y="-50" width="140" height="100" rx="8" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+
+      <!-- Film sprockets left -->
+      <rect x="-85" y="-40" width="12" height="16" rx="2" fill="#8b5cf6"/>
+      <rect x="-85" y="-15" width="12" height="16" rx="2" fill="#8b5cf6"/>
+      <rect x="-85" y="10" width="12" height="16" rx="2" fill="#8b5cf6"/>
+
+      <!-- Film sprockets right -->
+      <rect x="73" y="-40" width="12" height="16" rx="2" fill="#8b5cf6"/>
+      <rect x="73" y="-15" width="12" height="16" rx="2" fill="#8b5cf6"/>
+      <rect x="73" y="10" width="12" height="16" rx="2" fill="#8b5cf6"/>
+
+      <!-- Inner frame (the "first frame") -->
+      <rect x="-55" y="-35" width="110" height="70" rx="4" fill="#334155"/>
+      <text x="0" y="5" text-anchor="middle" fill="#d946ef" font-family="system-ui, sans-serif" font-size="24" font-weight="700">1</text>
+    </g>
+
+    <!-- Main Headline -->
+    <text x="490" y="250" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">
+      Every great film starts
+    </text>
+    <text x="490" y="288" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">
+      with a single frame.
+    </text>
+
+    <!-- Subheadline -->
+    <text x="490" y="330" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">
+      Plan your project with specs and wireframes before writing code.
+    </text>
+
+    <!-- Specs + Frames Cards -->
+    <g transform="translate(260, 370)">
+      <!-- Specs Card -->
+      <rect x="0" y="0" width="200" height="130" rx="8" fill="#334155" stroke="#475569"/>
+      <circle cx="100" cy="40" r="24" fill="#8b5cf6" opacity="0.2"/>
+      <text x="100" y="48" text-anchor="middle" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="20">👓</text>
+      <text x="100" y="85" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="16" font-weight="600">Specs</text>
+      <text x="100" y="108" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Requirements with clarity</text>
+    </g>
+
+    <g transform="translate(260, 370)">
+      <!-- Plus Sign -->
+      <text x="230" y="70" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="24">+</text>
+    </g>
+
+    <g transform="translate(490, 370)">
+      <!-- Frames Card -->
+      <rect x="0" y="0" width="200" height="130" rx="8" fill="#334155" stroke="#475569"/>
+      <circle cx="100" cy="40" r="24" fill="#d946ef" opacity="0.2"/>
+      <text x="100" y="48" text-anchor="middle" fill="#d946ef" font-family="system-ui, sans-serif" font-size="20">🖼️</text>
+      <text x="100" y="85" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="16" font-weight="600">Frames</text>
+      <text x="100" y="108" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Structure for your vision</text>
+    </g>
+
+    <!-- Equals Sign and Result -->
+    <text x="490" y="535" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="18">=</text>
+    <text x="490" y="570" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="18" font-weight="600">
+      Clear vision, properly supported.
+    </text>
+
+    <!-- CTA Button -->
+    <rect x="390" y="600" width="200" height="50" rx="8" fill="url(#hero-gradient)"/>
+    <text x="490" y="632" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">
+      Fork on GitHub →
+    </text>
+
+    <!-- Footer tagline -->
+    <text x="490" y="700" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">
+      Stop coding before you know what you're building.
+    </text>
+  </g>
+
+  <!-- ==================== MOBILE (Right) ==================== -->
+  <g id="mobile-view">
+    <!-- Phone Frame -->
+    <rect x="980" y="60" width="360" height="700" rx="24" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+
+    <!-- Status Bar -->
+    <rect x="990" y="70" width="340" height="24" fill="#1e293b"/>
+    <text x="1010" y="87" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">9:41</text>
+    <text x="1300" y="87" text-anchor="end" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">100%</text>
+
+    <!-- Content Area -->
+    <rect x="990" y="94" width="340" height="616" fill="#1e293b"/>
+
+    <!-- Film Strip Icon (smaller) -->
+    <g transform="translate(1160, 160)">
+      <rect x="-50" y="-35" width="100" height="70" rx="6" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="-62" y="-28" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="-62" y="-10" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="-62" y="8" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="52" y="-28" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="52" y="-10" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="52" y="8" width="10" height="12" rx="2" fill="#8b5cf6"/>
+      <rect x="-38" y="-23" width="76" height="46" rx="3" fill="#334155"/>
+      <text x="0" y="5" text-anchor="middle" fill="#d946ef" font-family="system-ui, sans-serif" font-size="18" font-weight="700">1</text>
+    </g>
+
+    <!-- Headline -->
+    <text x="1160" y="250" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">
+      Every great film
+    </text>
+    <text x="1160" y="275" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">
+      starts with a frame.
+    </text>
+
+    <!-- Subheadline -->
+    <text x="1160" y="305" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+      Plan with specs and wireframes
+    </text>
+    <text x="1160" y="320" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+      before writing code.
+    </text>
+
+    <!-- Stacked Cards -->
+    <rect x="1020" y="350" width="280" height="70" rx="8" fill="#334155" stroke="#475569"/>
+    <text x="1050" y="390" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="18">👓</text>
+    <text x="1080" y="380" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Specs</text>
+    <text x="1080" y="398" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Requirements with clarity</text>
+
+    <rect x="1020" y="430" width="280" height="70" rx="8" fill="#334155" stroke="#475569"/>
+    <text x="1050" y="470" fill="#d946ef" font-family="system-ui, sans-serif" font-size="18">🖼️</text>
+    <text x="1080" y="460" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Frames</text>
+    <text x="1080" y="478" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Structure for your vision</text>
+
+    <!-- Result -->
+    <text x="1160" y="535" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">
+      = Clear vision, properly supported
+    </text>
+
+    <!-- CTA Button -->
+    <rect x="1020" y="565" width="280" height="44" rx="8" fill="url(#hero-gradient)"/>
+    <text x="1160" y="593" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">
+      Fork on GitHub →
+    </text>
+
+    <!-- Footer -->
+    <text x="1160" y="640" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">
+      Stop coding before you know
+    </text>
+    <text x="1160" y="655" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">
+      what you're building.
+    </text>
+
+    <!-- Home Indicator -->
+    <rect x="1110" y="720" width="100" height="4" rx="2" fill="#475569"/>
+  </g>
+</svg>

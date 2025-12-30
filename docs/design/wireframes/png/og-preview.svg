@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1200" height="686">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#334155" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#bg-gradient)"/>
+  <rect width="1400" height="800" fill="url(#dot-grid)"/>
+
+  <!-- Accent Line -->
+  <rect x="0" y="0" width="1400" height="3" fill="#8b5cf6"/>
+
+  <!-- Title -->
+  <text x="700" y="36" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">
+    FirstFrame — The Wireframe Viewer
+  </text>
+
+  <!-- ==================== VIEWER UI (Center) ==================== -->
+  <g id="viewer-ui" transform="translate(200, 60)">
+    <!-- Main Frame -->
+    <rect x="0" y="0" width="1000" height="680" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+
+    <!-- Sidebar (220px) -->
+    <rect x="0" y="0" width="220" height="680" rx="8" fill="#111827"/>
+
+    <!-- Sidebar Header -->
+    <circle cx="35" cy="35" r="12" fill="#6366f1"/>
+    <text x="55" y="40" fill="#6366f1" font-family="system-ui, sans-serif" font-size="14" font-weight="600">FirstFrame</text>
+
+    <!-- Nav Section 1 (expanded) -->
+    <text x="20" y="85" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">▼ 01 - VIEWER</text>
+    <rect x="10" y="95" width="200" height="32" rx="4" fill="#1f2937"/>
+    <rect x="10" y="95" width="3" height="32" fill="#6366f1"/>
+    <text x="25" y="115" fill="#6366f1" font-family="system-ui, sans-serif" font-size="12">Viewer Interface</text>
+    <text x="25" y="130" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">The wireframe viewer UI</text>
+
+    <!-- Nav Section 2 (collapsed) -->
+    <text x="20" y="165" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">▶ 02 - WORKFLOW</text>
+
+    <!-- Nav Section 3 (collapsed) -->
+    <text x="20" y="195" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">▶ 03 - HERO</text>
+
+    <!-- Nav Section 4 (collapsed) -->
+    <text x="20" y="225" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" font-weight="600">▶ 04 - COMPONENTS</text>
+
+    <!-- Main Viewer Area -->
+    <rect x="228" y="8" width="764" height="580" rx="4" fill="#374151"/>
+
+    <!-- SVG Preview inside viewer -->
+    <rect x="268" y="48" width="684" height="500" rx="4" fill="#fff"/>
+
+    <!-- Example wireframe content inside -->
+    <rect x="288" y="68" width="300" height="400" rx="4" fill="#e5e7eb" stroke="#d1d5db"/>
+    <text x="438" y="270" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="14">[Desktop View]</text>
+
+    <rect x="608" y="68" width="180" height="400" rx="12" fill="#e5e7eb" stroke="#d1d5db"/>
+    <text x="698" y="270" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">[Mobile View]</text>
+
+    <!-- Footer Bar -->
+    <rect x="228" y="596" width="764" height="76" fill="#111827" rx="0 0 8 0"/>
+
+    <!-- Prev Button -->
+    <rect x="248" y="612" width="100" height="40" rx="6" fill="#374151" stroke="#4b5563"/>
+    <text x="298" y="637" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="12">← Previous</text>
+
+    <!-- Zoom Controls -->
+    <rect x="365" y="612" width="36" height="40" rx="6" fill="#374151" stroke="#4b5563"/>
+    <text x="383" y="637" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="16">−</text>
+
+    <text x="430" y="637" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="13">85%</text>
+
+    <rect x="460" y="612" width="36" height="40" rx="6" fill="#374151" stroke="#4b5563"/>
+    <text x="478" y="637" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="16">+</text>
+
+    <!-- Focus Mode Hint -->
+    <text x="540" y="637" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">F to focus</text>
+
+    <!-- Current Info -->
+    <text x="700" y="628" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Viewer Interface</text>
+    <text x="700" y="648" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12">1 / 4</text>
+
+    <!-- GitHub Link -->
+    <text x="850" y="637" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">Fork on GitHub</text>
+
+    <!-- Next Button -->
+    <rect x="940" y="612" width="100" height="40" rx="6" fill="#8b5cf6"/>
+    <text x="990" y="637" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="12">Next →</text>
+  </g>
+
+  <!-- ==================== ANNOTATIONS ==================== -->
+
+  <!-- Annotation 1: Sidebar Navigation -->
+  <g id="annotation-sidebar">
+    <rect x="20" y="100" width="160" height="70" rx="6" fill="#334155" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="100" y="125" text-anchor="middle" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="11" font-weight="600">NAVIGATION</text>
+    <text x="100" y="145" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Click sections to</text>
+    <text x="100" y="160" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">expand/collapse</text>
+    <!-- Leader line -->
+    <line x1="180" y1="135" x2="200" y2="135" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="200" cy="135" r="4" fill="#8b5cf6"/>
+  </g>
+
+  <!-- Annotation 2: Pan & Zoom -->
+  <g id="annotation-pan-zoom">
+    <rect x="1220" y="200" width="160" height="90" rx="6" fill="#334155" stroke="#d946ef" stroke-width="2"/>
+    <text x="1300" y="225" text-anchor="middle" fill="#d946ef" font-family="system-ui, sans-serif" font-size="11" font-weight="600">PAN &amp; ZOOM</text>
+    <text x="1300" y="248" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Drag to pan</text>
+    <text x="1300" y="263" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Scroll to zoom</text>
+    <text x="1300" y="278" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Click % to reset</text>
+    <!-- Leader line -->
+    <line x1="1220" y1="245" x2="1180" y2="320" stroke="#d946ef" stroke-width="2"/>
+    <circle cx="1180" cy="320" r="4" fill="#d946ef"/>
+  </g>
+
+  <!-- Annotation 3: Keyboard Shortcuts -->
+  <g id="annotation-keyboard">
+    <rect x="1220" y="380" width="160" height="130" rx="6" fill="#334155" stroke="#22c55e" stroke-width="2"/>
+    <text x="1300" y="405" text-anchor="middle" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600">KEYBOARD</text>
+    <text x="1240" y="430" fill="#94a3b8" font-family="monospace" font-size="10">←/→</text>
+    <text x="1290" y="430" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Prev/Next</text>
+    <text x="1240" y="450" fill="#94a3b8" font-family="monospace" font-size="10">↑/↓</text>
+    <text x="1290" y="450" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Zoom in/out</text>
+    <text x="1240" y="470" fill="#94a3b8" font-family="monospace" font-size="10">F</text>
+    <text x="1290" y="470" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Focus mode</text>
+    <text x="1240" y="490" fill="#94a3b8" font-family="monospace" font-size="10">0</text>
+    <text x="1290" y="490" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Reset zoom</text>
+    <!-- Leader line -->
+    <line x1="1220" y1="460" x2="1180" y2="500" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="1180" cy="500" r="4" fill="#22c55e"/>
+  </g>
+
+  <!-- Annotation 4: Focus Mode -->
+  <g id="annotation-focus">
+    <rect x="1220" y="550" width="160" height="70" rx="6" fill="#334155" stroke="#eab308" stroke-width="2"/>
+    <text x="1300" y="575" text-anchor="middle" fill="#eab308" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FOCUS MODE</text>
+    <text x="1300" y="598" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Press F to hide UI</text>
+    <text x="1300" y="613" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Esc to exit</text>
+    <!-- Leader line - points to top-right of "F to focus" -->
+    <line x1="1220" y1="590" x2="820" y2="685" stroke="#eab308" stroke-width="2"/>
+    <circle cx="820" cy="685" r="4" fill="#eab308"/>
+  </g>
+
+  <!-- Annotation 5: SVG Wireframes -->
+  <g id="annotation-svg">
+    <rect x="20" y="350" width="160" height="90" rx="6" fill="#334155" stroke="#ef4444" stroke-width="2"/>
+    <text x="100" y="375" text-anchor="middle" fill="#ef4444" font-family="system-ui, sans-serif" font-size="11" font-weight="600">SVG WIREFRAMES</text>
+    <text x="100" y="398" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Desktop + Mobile</text>
+    <text x="100" y="413" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">side by side</text>
+    <text x="100" y="428" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">LLM-readable XML</text>
+    <!-- Leader line -->
+    <line x1="180" y1="395" x2="460" y2="320" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="460" cy="320" r="4" fill="#ef4444"/>
+  </g>
+
+  <!-- Annotation 6: Footer Controls -->
+  <g id="annotation-footer">
+    <rect x="20" y="550" width="160" height="70" rx="6" fill="#334155" stroke="#06b6d4" stroke-width="2"/>
+    <text x="100" y="575" text-anchor="middle" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FOOTER CONTROLS</text>
+    <text x="100" y="598" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Navigate wireframes</text>
+    <text x="100" y="613" text-anchor="middle" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="10">Zoom controls</text>
+    <!-- Leader line -->
+    <line x1="180" y1="590" x2="420" y2="680" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="420" cy="680" r="4" fill="#06b6d4"/>
+  </g>
+
+  <!-- Bottom instruction -->
+  <text x="700" y="780" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">
+    The viewer displays your SVG wireframes with interactive navigation, zoom, and focus mode.
+  </text>
+</svg>
