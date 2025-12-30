@@ -4,7 +4,7 @@
 
 **See your project clearly from the first frame.** Plan features with specs and wireframes before writing code.
 
-![FirstFrame Preview](docs/design/wireframes/preview.svg)
+[![FirstFrame Demo](docs/design/wireframes/demo.gif)](https://tortoisewolfe.github.io/First-Frame/design/wireframes/)
 
 ## [👀 View Example Wireframes](https://tortoisewolfe.github.io/First-Frame/design/wireframes/)
 
